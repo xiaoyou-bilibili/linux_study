@@ -136,7 +136,6 @@ POSTOUTING链 ：用于源地址转换（SNAT）。
                              ┏╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍┓
                              ┃    Network    ┃
                              ┗━━━━━━━━━━━━━━━┛
-
 ```
 
 ## 3. 例子
@@ -253,7 +252,6 @@ iptables -A INPUT -p tcp --dport 21 -j ACCEPT    #允许ftp服务的21端口
 iptables -A INPUT -p tcp --dport 20 -j ACCEPT    #允许FTP服务的20端口
 iptables -A INPUT -j reject       #禁止其他未允许的规则访问
 iptables -A FORWARD -j REJECT     #禁止其他未允许的规则访问
-
 ```
 
 ### 3.11 屏蔽ip
@@ -404,8 +402,6 @@ ip route add 192.168.1.12 via 192.168.123.2 table 1
 
 ![](../images/2022-11-13-16-52-18-image.png)
 
-
-
 然后是策略，策略这块就比较重要了，我们不需要负载均衡，所以每个成员单独分配了一个策略
 
 ![](../images/2022-11-13-16-53-37-image.png)
@@ -415,8 +411,6 @@ ip route add 192.168.1.12 via 192.168.123.2 table 1
 ![](../images/2022-11-13-16-54-58-image.png)
 
 这样我们就可以下载器使用wifi，然后我们使用5g来学习，两个操作互不耽误
-
-
 
 ## 参考文献
 
